@@ -1,0 +1,36 @@
+{
+    "totalValue": 19536341,
+    "todayProfit": 194.53,
+    "profitPercentage": 2.7,
+    "coins": [
+      {
+        "name": "Bitcoin",
+        "amount": 5.2,
+        "value": 25000,
+        "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/1200px-Bitcoin.svg.png",
+        "changePercentage": 2.5
+      },
+      {
+        "name": "Ethereum",
+        "amount": 100,
+        "value": 4000,
+        "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Ethereum-icon-purple.svg/200px-Ethereum-icon-purple.svg.png",
+        "changePercentage": -1.8
+      },
+      {
+        "name": "Litecoin",
+        "amount": 50,
+        "value": 200,
+        "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f8/LTC-400.png",
+        "changePercentage": 1.2
+      },
+      {
+        "name": "Ada",
+        "amount": 5000,
+        "value": 1.5,
+        "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Coin-ada-big.svg/1200px-Coin-ada-big.svg.png",
+        "changePercentage": 3.0
+      }
+    ]
+  }
+  

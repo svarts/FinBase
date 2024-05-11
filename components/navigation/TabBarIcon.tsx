@@ -1,9 +1,15 @@
-// You can explore the built-in icon families and icons on the web at https://icons.expo.fyi/
+import React from 'react';
+import { Entypo, FontAwesome5, MaterialIcons } from '@expo/vector-icons';
+import { ViewStyle } from 'react-native';
 
-import Ionicons from '@expo/vector-icons/Ionicons';
-import { type IconProps } from '@expo/vector-icons/build/createIconSet';
-import { type ComponentProps } from 'react';
+interface TabBarIconProps extends Partial<React.ComponentProps<typeof Entypo> & React.ComponentProps<typeof FontAwesome5> & React.ComponentProps<typeof MaterialIcons>> {
+  style?: ViewStyle;
+  iconFamily: 'entypo' | 'fontAwesome' | 'material'; 
+  focused?: boolean;
+}
 
-export function TabBarIcon({ style, ...rest }: IconProps<ComponentProps<typeof Ionicons>['name']>) {
-  return <Ionicons size={28} style={[{ marginBottom: -3 }, style]} {...rest} />;
+export function TabBarIcon({ style, iconFamily, ...rest }: TabBarIconProps) {
+  const IconComponent = iconFamily === 'entypo' ? Entypo : iconFamily === 'fontAwesome' ? FontAwesome5 : MaterialIcons;
+  
+  return <IconComponent size={20} style={[{ marginTop: 21 }, style]} {...rest} />;
 }
