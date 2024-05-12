@@ -149,9 +149,9 @@ const CoinItem = ({ coin }: { coin: Coin }) => {
 const styles = StyleSheet.create({
   shadow: {
     shadowColor: '#900271',
-    shadowOffset: { width: 0, height: 15 },
-    shadowOpacity: 0.5,
+    shadowOffset: { width: 0, height: 25 },
+    shadowOpacity: 0.4,
     shadowRadius: 6,
-    elevation: 25,
+    elevation: 20
   }
 });
